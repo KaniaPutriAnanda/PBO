@@ -5,19 +5,12 @@ import java.io.*;
 
 public class Idol {
 
-    /// STATIC Digunakan Untuk memanggil sebuah kode yang bisa
-    /// masuk ke function yang dalam
-    /// A.K.A Variabel Global :v
-
-    /// ARRAY LIST MAHASISWA, MENAMPUNG SEMUA ISINYA
+    // Array list grup = menampung semua datanya
     static ArrayList<Grup> idol_Grup = new ArrayList<Grup>();
-    /// BUFFERED READER (INPUT)
+    
+    // BUFFERED READER (INPUT)
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) throws IOException {
         
         
@@ -83,7 +76,9 @@ public class Idol {
 
     public static void lihat() throws IOException{
         if (idol_Grup.size()==0){
-            System.out.println("DATA TIDAK ADA!!!");
+            System.out.println("+----------------+");
+            System.out.println("| TIDAK ADA DATA |");
+            System.out.println("+----------------+");
             System.out.print("\n");
         }
 
@@ -93,10 +88,10 @@ public class Idol {
         System.out.println("+======================+");
         System.out.println("|       L I H A T      |");
         System.out.println("+----------------------+"); 
-        /// size == ukuran / panjang array list
+        // size == ukuran / panjang array list
 
         for (int i = 0; i < idol_Grup.size(); i++) {
-            System.out.println("Data ke- " + (i+1));
+            System.out.println("       DATA KE - " + (i+1));
 
             // get == mengambil data dari array list
             System.out.println("Nama Grup Idol         : " + idol_Grup.get(i).namaGrup);
@@ -112,7 +107,9 @@ public class Idol {
     public static void update() throws IOException{
 
         if (idol_Grup.size()==0){
-            System.out.println("TIDAK ADA DATA!!!!!!");
+            System.out.println("+----------------+");
+            System.out.println("| TIDAK ADA DATA |");
+            System.out.println("+----------------+");
             System.out.print("\n");
         }
         else {
@@ -157,7 +154,9 @@ public class Idol {
 
     public static void hapus() throws IOException{
         if (idol_Grup.size()==0){
-            System.out.println("TIDAK ADA DATA!!!");
+            System.out.println("+----------------+");
+            System.out.println("| TIDAK ADA DATA |");
+            System.out.println("+----------------+");
             System.out.print("\n");
         }
 
@@ -173,9 +172,7 @@ public class Idol {
         int index = Integer.parseInt(br.readLine());
         System.out.print("\n");
         // remove == menghapus data dari array list
-        idol_Grup.remove(index-1);
-        System.out.println("---DATA BERHASIL DIHAPUS---");
-        System.out.print("\n");
+        idol_Grup.remove(index-1).del();
         }
     }
 
