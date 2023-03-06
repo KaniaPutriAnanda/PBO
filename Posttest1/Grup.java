@@ -19,24 +19,23 @@ public Grup (String namaGrup, String agensi, String laguDebut, int tahunDebut, i
 
 //Method
 public void grupIdol(){
-    // System.out.println("Nama Grup Idol         : " + this.namaGrup);
-    // System.out.println("Agensi Grup Idol       : " + this.agensi);
-    // System.out.println("Lagu Debut Grup Idol   : " + this.laguDebut);
-    // System.out.println("Tahun Debut Grup Idol  : " + this.tahunDebut);
-    // System.out.println("Jumlah Member Grup Idol: " + this.jmlMember);
-    // System.out.print("\n");
-    System.out.println("---DATA BERHASIL DI TAMBAH---");
+    System.out.println("+---------------------------+");
+    System.out.println("|   DATA BERHASIL DITAMBAH  |");
+    System.out.println("+---------------------------+");
     System.out.print("\n");
 }
 
 public void baru(){
-    // System.out.println("Nama Grup Idol         : " + this.namaGrup);
-    // System.out.println("Agensi Grup Idol       : " + this.agensi);
-    // System.out.println("Lagu Debut Grup Idol   : " + this.laguDebut);
-    // System.out.println("Tahun Debut Grup Idol  : " + this.tahunDebut);
-    // System.out.println("Jumlah Member Grup Idol: " + this.jmlMember);
-    // System.out.print("\n");
-    System.out.println("---DATA BERHASIL DI PERBARUI---");
+    System.out.println("+---------------------------+");
+    System.out.println("|   DATA BERHASIL DIUPDATE  |");
+    System.out.println("+---------------------------+");
+    System.out.print("\n");
+}
+
+public void del(){
+    System.out.println("+---------------------------+");
+    System.out.println("|   DATA BERHASIL DIHAPUS   |");
+    System.out.println("+---------------------------+");
     System.out.print("\n");
 }
 
