@@ -35,10 +35,12 @@ public class Grup extends Umum {
         System.out.print("\n");
     }
 
+    //Overload Hapus
     static void group (int opsi){
         Idol.grup.remove(opsi-1);
     }
     
+    //Overload Update
     static void group (int opsi, String grupNama, String grupAgensi, String grupLagu, int grupMember, int grupDebut ) {
         Idol.grup.get(opsi-1).setNama(grupNama);
         Idol.grup.get(opsi-1).setNamaAgensi(grupAgensi);
