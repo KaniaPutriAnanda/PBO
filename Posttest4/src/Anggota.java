@@ -35,10 +35,12 @@ public class Anggota extends Umum {
         System.out.print("\n");
     }
 
+    //Overload Hapus
     static void member (int opsi){
         Idol.anggota.remove(opsi-1);
     }
-
+    
+    //Overload Update
     static void member (int opsi, String memberNama, String memberAgensi, int memberTahun, int memberLahir, double memberTinggi){
         Idol.anggota.get(opsi-1).setNama(memberNama);
         Idol.anggota.get(opsi-1).setNamaAgensi(memberAgensi);
